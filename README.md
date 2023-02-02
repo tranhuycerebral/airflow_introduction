@@ -14,12 +14,7 @@ astro dev start
 Finish the dag `./dag/example-dag.py` and move to the next step
 ![alt text](https://github.com/tranhuycerebral/airflow_introduction/blob/main/sample_workflow.png?raw=true)
 
-## Restart astro and verify the pipeline
-```bash
-astro dev restart
-```
-
-## Cleanup
+## Cleanup after verifying the result
 ```bash
 astro dev stop
 ```

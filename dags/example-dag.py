@@ -54,4 +54,4 @@ with DAG(
     notify_via_email_op = PythonOperator(task_id="notify_via_email", python_callable=notify_via_email)
 
     ##TODO: Implement the workflow
-
+    download_invoices_op >> transform_invoices_op >> save_to_database_op >> [generate_report_op, notify_via_email_op]
